@@ -150,30 +150,22 @@ The `server` directory contains the Node.js/Express backend responsible for REST
 
 ---
 
-## 🔐 Authentication & Authorization
+## 🔐 Authentication & Demo Access
 
-NEXORA implements authentication and role-based access control.
+NEXORA includes authentication and role-based authorization.
 
-There are two primary roles:
+For the deployed demo, a predefined user account/session is provided so that evaluators can immediately explore the application's core features without going through the registration process.
 
-```text
-User
- │
- ├── Browse products
- ├── Manage cart
- ├── Place orders
- └── Track orders
+### Demo User
 
-Admin
- │
- ├── Manage products
- ├── Manage orders
- └── Access admin dashboard
-```
+* **Authentication:** Automatic demo sign-in
+* **Access:** User shopping, cart, checkout and order-related features
 
-Protected functionality is restricted according to the authenticated user's role.
+### Admin Access
 
----
+The application also includes role-based administrative functionality for managing products and orders.
+
+> **Note:** The automatic sign-in is provided for demonstration and evaluation purposes. In a production environment, users would authenticate through a standard login/registration flow.
 
 ## 🛒 E-Commerce Workflow
 
